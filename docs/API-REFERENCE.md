@@ -13,7 +13,7 @@
 ## Text
 
 | Endpoint | Docs page | Notes |
-|---|---|---|
+| --- | --- | --- |
 | POST `/v1/text/chat` | `/api-reference/text/chat` | Native chat endpoint (used by this starter's client) |
 | Anthropic-compatible `/v1/messages` | `/api-reference/text/anthropic-api` | Anthropic SDK with `base_url = "https://geoff.ai/api"` |
 | OpenAI-compatible `/v1/chat/completions` | `/api-reference/text/openai-api` | OpenAI SDK with `base_url = "https://geoff.ai/api/v1"` |
@@ -38,7 +38,7 @@ Features: `generateText()` / `streamText()`, `generateObject()` / `streamObject(
 ## Speech (17 endpoints)
 
 | Group | Docs pages (`/api-reference/speech/...`) |
-|---|---|
+| --- | --- |
 | Text-to-audio | `t2a-http`, `t2a-websocket` |
 | Async T2A | `t2a-async-create`, `t2a-async-query` |
 | Speech-to-text | `transcribe` |
@@ -49,7 +49,7 @@ Features: `generateText()` / `streamText()`, `generateObject()` / `streamObject(
 ## Video (async: submit → poll → download)
 
 | Docs page (`/api-reference/video/...`) | Purpose |
-|---|---|
+| --- | --- |
 | `text-to-video` | Generate from a text prompt |
 | `image-to-video` | Animate an image |
 | `start-end-to-video` | Interpolate between start/end frames |
@@ -60,7 +60,7 @@ Features: `generateText()` / `streamText()`, `generateObject()` / `streamObject(
 ## Image
 
 | Docs page (`/api-reference/image/...`) | Purpose |
-|---|---|
+| --- | --- |
 | `text-to-image` | Generate (`prompt`, `width`, `height`) |
 | `image-to-image` | Transform (`image` base64, `prompt`, `strength`) |
 | `upscale` | Increase resolution |
@@ -73,7 +73,7 @@ Features: `generateText()` / `streamText()`, `generateObject()` / `streamObject(
 ## Music
 
 | Docs page (`/api-reference/music/...`) | Purpose |
-|---|---|
+| --- | --- |
 | `generate` | Text → music (`prompt`, `lyrics` with `[verse]`/`[chorus]`, `audio_setting`) |
 | `lyrics` | Generate structured lyrics first (two-step workflow) |
 | `cover` | Music → music covers |
@@ -83,7 +83,7 @@ Features: `generateText()` / `streamText()`, `generateObject()` / `streamObject(
 ## Code
 
 | Endpoint | Docs page | Notes |
-|---|---|---|
+| --- | --- | --- |
 | POST `/v1/code/execute` | `/api-reference/code/execute` | Run a snippet: `python`, `javascript`, `typescript`, `rust`, `go`, `shell`; `timeout` ≤ 300s; returns `stdout`, `stderr`, `exit_code`, generated `files` |
 | POST sandbox create | `/api-reference/code/sandbox-create` | Persistent sandbox |
 | POST sandbox exec | `/api-reference/code/sandbox-exec` | Run inside a sandbox |
@@ -92,7 +92,7 @@ Features: `generateText()` / `streamText()`, `generateObject()` / `streamObject(
 ## Training (LoRA & voice)
 
 | Docs page (`/api-reference/training/...`) | Purpose |
-|---|---|
+| --- | --- |
 | `image-lora` / `video-lora` / `music-lora` | Train custom LoRAs |
 | `voice-model` | Train a custom voice |
 | `status` (GET) | Poll training jobs |
@@ -100,7 +100,7 @@ Features: `generateText()` / `streamText()`, `generateObject()` / `streamObject(
 ## File
 
 | Endpoint | Docs page |
-|---|---|
+| --- | --- |
 | POST `/v1/files/upload` (multipart; `purpose`: `image-input` \| `video-input` \| `audio-input` \| `general`) | `/api-reference/file/upload` |
 | GET `/v1/files/list` | `/api-reference/file/list` |
 | GET `/v1/files/retrieve` | `/api-reference/file/retrieve` |
@@ -112,7 +112,7 @@ Features: `generateText()` / `streamText()`, `generateObject()` / `streamObject(
 One token balance covers **all** capabilities (text, speech, video, image, music, code, files). Consumption varies with resolution, duration, and complexity.
 
 | Plan | $/month | Tokens/month | Req/min | Input tok/min | Output tok/min |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | Basic | $19 | 150M | 60 | 100K | 50K |
 | Pro | $199 | 2B | 125 | 500K | 200K |
 | Max | $499 | 7B | 200 | 2M | 800K |
