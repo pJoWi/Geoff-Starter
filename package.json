@@ -1,0 +1,26 @@
+{
+  "name": "geoff-starter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Starter project for building with the Geoff API (geoff.ai)",
+  "type": "module",
+  "scripts": {
+    "chat": "tsx src/examples/chat.ts",
+    "stream": "tsx src/examples/stream.ts",
+    "structured": "tsx src/examples/structured.ts",
+    "image": "tsx src/examples/image.ts",
+    "video": "tsx src/examples/video.ts",
+    "music": "tsx src/examples/music.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@stacknet/sdk": "^0.1.0",
+    "dotenv": "^16.4.5",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
